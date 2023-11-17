@@ -25,7 +25,7 @@
     }
     .title {
       padding: 0;
-      margin: 3%;
+      margin: 8% 4% 8% 0%;
       font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
         sans-serif;
@@ -37,18 +37,26 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
+      margin-bottom: 5%;
+      gap: 10px;
       
     }
     .text-container {
       display: block;
-      margin:5%
+      margin:4%
+      
+
     
     }
     .bullet-text {
-      
+      display: flex;
+      margin-top: 0%;
+  
     }
+    
     li {
-      
+      display: flex;
+      flex-wrap: nowrap;
     }
     img {
       max-width: 100%;
@@ -60,14 +68,22 @@
       flex-direction: column;
       font-size: calc(16px + 0.390625vw);
       list-style: none;
-      gap: 10px;
+      gap: 8px;
     }
     .attribution {
       font-size: 11px;
       text-align: center;
     }
+    .title-caption {
+      margin-bottom: 5%;
+    }
     .attribution a {
       color: hsl(228, 45%, 44%);
+    }
+    .bullet-point-img {
+      margin-right: 10px;
+      margin-top: 0%;
+      margin-bottom: 5%;
     }
 
     /* Media query for mobile screens */
@@ -109,19 +125,19 @@
       </p>
       <ul class="feature-list">
         <li>
-          <img src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
+          <img class="bullet-point-img" src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
             Product
             discovery and building what matters
           </div>
         </li>
         <li>
-          <img src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
+          <img class="bullet-point-img" src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
             Measuring
             to ensure updates are a success
           </div>
         </li>
         <li>
-          <img src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
+          <img class="bullet-point-img" src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
             And much
             more!
           </div>
