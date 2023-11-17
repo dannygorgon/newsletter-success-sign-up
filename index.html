@@ -54,6 +54,10 @@
   
     }
     
+    #email {
+      border: solid 1px lightgray;
+      border-radius: 4px;
+    }
     li {
       display: flex;
       flex-wrap: nowrap;
@@ -144,7 +148,9 @@
         </li>
       </ul></div>
       
-      <p>Email address email@company.com Subscribe to monthly newsletter</p>
+      <label for="email">
+        <p>Email address </p>
+      </label> <input type="email"  value="email@company.com" id="email" pattern=".+@example\.com"  required /><p>Subscribe to monthly newsletter</p>
     </div>
   </div>
     <img class="image-desktop-container" src="./assets/images/illustration-sign-up-desktop.svg" alt="background image">
