@@ -22,6 +22,8 @@
       align-items: center;
       justify-content: center;
       padding: 0px;
+      margin: 12%;
+      border-radius: 1rem;
     }
     .title {
       padding: 0;
@@ -51,12 +53,18 @@
     .bullet-text {
       display: flex;
       margin-top: 0%;
+      margin-bottom: -3%;
   
     }
     
     #email {
       border: solid 1px lightgray;
       border-radius: 4px;
+      height: 2.5rem;
+      width: 15rem;
+      font-size: 1rem;
+      color: rgb(141, 137, 137);
+      margin-bottom: 8%;
     }
     li {
       display: flex;
@@ -87,7 +95,7 @@
     .bullet-point-img {
       margin-right: 10px;
       margin-top: 0%;
-      margin-bottom: 5%;
+      margin-bottom: 2%;
     }
 
     /* Media query for mobile screens */
@@ -110,50 +118,53 @@
         display: none; /* Hide the mobile image */
       }
       .image-desktop-container {
-        display: block; /* Show the desktop image */
+        display: block;
+    margin: 1rem;
+    width: 40%;/* Show the desktop image */
       }
     }
   </style>
 </head>
 <body>
-  <div class="sign-up-card">
-    <div class="info-pane">
-      <div class="image-mobile-container">
-        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Mobile Image" class="image-mobile-container">
+  <div class="card-container">
+    <div class="sign-up-card">
+      <div class="info-pane">
+        <div class="image-mobile-container">
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Mobile Image" class="image-mobile-container">
+        </div>
+        <div class="text-container">
+        <h1 class="title">Stay updated!</h1>
+        <div class="textbox"><p class="title-caption">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="feature-list">
+          <li>
+            <img class="bullet-point-img" src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
+              Product
+              discovery and building what matters
+            </div>
+          </li>
+          <li>
+            <img class="bullet-point-img" src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
+              Measuring
+              to ensure updates are a success
+            </div>
+          </li>
+          <li>
+            <img class="bullet-point-img" src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
+              And much
+              more!
+            </div>
+          </li>
+        </ul></div>
+    
+        <label for="email">
+          <p>Email address </p>
+        </label> <input type="email"  value="email@company.com" id="email" pattern=".+@example\.com"  required /><p>Subscribe to monthly newsletter</p>
       </div>
-
-      <div class="text-container">
-      <h1 class="title">Stay updated!</h1>
-      <div class="textbox"><p class="title-caption">
-        Join 60,000+ product managers receiving monthly updates on:
-      </p>
-      <ul class="feature-list">
-        <li>
-          <img class="bullet-point-img" src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
-            Product
-            discovery and building what matters
-          </div>
-        </li>
-        <li>
-          <img class="bullet-point-img" src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
-            Measuring
-            to ensure updates are a success
-          </div>
-        </li>
-        <li>
-          <img class="bullet-point-img" src="./assets/images/icon-list.svg" alt="list icon" /><div class="bullet-text">
-            And much
-            more!
-          </div>
-        </li>
-      </ul></div>
-      
-      <label for="email">
-        <p>Email address </p>
-      </label> <input type="email"  value="email@company.com" id="email" pattern=".+@example\.com"  required /><p>Subscribe to monthly newsletter</p>
     </div>
-  </div>
-    <img class="image-desktop-container" src="./assets/images/illustration-sign-up-desktop.svg" alt="background image">
+      <img class="image-desktop-container" src="./assets/images/illustration-sign-up-desktop.svg" alt="background image">
+    </div>
   </div>
 
   <!-- Sign-up form end -->
